@@ -1,0 +1,41 @@
+USE twitter;
+drop table if exists message;
+
+CREATE TABLE message (
+    msg_to varchar(20),
+    msg_from varchar(20),
+    msg varchar(200),
+    time varchar(20)
+);
+
+
+drop table if exists user;
+
+CREATE TABLE User (
+    id varchar(20),
+   name varchar(20),
+    password varchar(20)
+);
+
+INSERT INTO User VALUES("jihae", "jihae lee", "1234");
+INSERT INTO User VALUES("abc", "yunjwoo nam", "1234");
+INSERT INTO User VALUES("id", "songjung oh", "1234");
+INSERT INTO User VALUES("id2", "hyun gee lee", "1234");
+
+
+drop table if exists message;
+
+CREATE TABLE message (
+   to_id varchar(20),
+    from_id varchar(20),
+    msg varchar(100), 
+    time varchar(100)
+);
+
+
+drop table if exists Follow;
+
+CREATE TABLE Follow (
+   follow_to varchar(20),
+    follow_from varchar(20)
+);
